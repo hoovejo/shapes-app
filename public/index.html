@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="js/paper-full.min.js"></script>
+    <script type="text/paperscript" src="js/app.js" canvas="appCanvas"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/io-wrapper.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+</head>
+
+<body class="fullscreen">
+    <nav>
+        <h1>Shapes app</h1>
+        <ul id="messages"></ul>
+    </nav>
+    <article>
+        <div class="paperscript">
+            <canvas id="appCanvas" resize></canvas>
+        </div>
+    </article>
+</body>
+
+</html>

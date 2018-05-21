@@ -1,0 +1,29 @@
+{
+  "name": "shapes-app",
+  "version": "1.0.0",
+  "description": "Display shapes",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com:hoovejo/shapes-app.git"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=6.9.1"
+  },
+  "author": "Joe Hoover",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "socket.io": "^2.1.1",
+    "twilio": "^3.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  }
+}

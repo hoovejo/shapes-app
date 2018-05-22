@@ -71,11 +71,14 @@ function onFrame(event) {
         if (item !== undefined) {
             // Move the item 1/50th of its width to the right. This way
             // larger circles move faster than smaller circles:
-            item.position.x += item.bounds.width / 50;
+            item.position.x += item.bounds.width / 20;
             // If the item has left the view on the right, remove it
             if (item.bounds.left > view.size.width) {
-                var t = item.remove()
-                //item.position.x = -item.bounds.width;
+                if (arrLen > 100) {
+                    var t = item.remove()
+                } else {
+                    item.position.x = -item.bounds.width;
+                }
             }
         }
     }
